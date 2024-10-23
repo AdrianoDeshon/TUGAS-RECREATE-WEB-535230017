@@ -11,10 +11,22 @@ body {
     color: #39ff14 !important;
     font-weight: bold;
 }
+.navbar .btn-subscribe {
+    background-color: #39ff14; /* Warna biru cerah */
+    color: rgb(0, 0, 0) !important; /* Warna teks putih */
+    padding: 8px 16px; /* Ruang dalam tombol */
+    border-radius: 5px; /* Sudut agak membulat */
+    font-weight: bold; /* Teks tebal */
+}
+
+.navbar .btn-subscribe:hover {
+    background-color: #37c456; /* Warna saat hover */
+    color: rgb(5, 2, 2) !important; /* Tetap putih */
+}
 .header {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #0e5c00, #02b51d);
+    background: linear-gradient(70deg, #222, #01440b);
 }
 .header h1 {
     font-size: 3rem;
