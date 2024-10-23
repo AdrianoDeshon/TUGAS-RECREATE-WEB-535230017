@@ -109,20 +109,20 @@ body {
     color: #12c2e9 !important;
 }
 .modal-content {
-    background-color: #1a1a1a; /* Warna latar belakang modal */
-    color: #39ff14; /* Warna teks modal */
-    border: none; /* Menghilangkan border default */
+    background-color: #1a1a1a; 
+    color: #39ff14; 
+    border: none; 
 }
 
 .modal-header, .modal-footer {
-    border: none; /* Menghilangkan border header dan footer modal */
+    border: none; 
 }
 
 .modal-header .btn-close {
-    background-color: #39ff14; /* Warna tombol close */
-    color: #000; /* Warna ikon 'X' */
+    background-color: #39ff14;
+    color: #000; 
 }
 
 .modal-body {
-    color: #b3b3b3; /* Warna teks di dalam body modal */
+    color: #b3b3b3; 
 }
