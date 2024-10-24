@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronics & Lifestyle</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -19,9 +20,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link btn-subscribe" href="#">Subscribe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn-subscribe" href="#join-community">Subscribe</a></li>
                 </ul>
             </div>
         </div>
@@ -59,7 +60,15 @@
             </div>
             <p>Stay ahead of the trends with the latest insights in technology, fashion, and lifestyle. From smart devices to sustainable fashion, we've got you covered.</p>
         </div>
-    </section>     
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are your go-to platform for the latest in electronics and lifestyle trends. Stay connected, informed, and inspired.</p>
+        </div>
+    </section>
 
     <!-- Electronics Section -->
     <section class="section-electronics">
@@ -95,9 +104,49 @@
             </div>
         </div>
     </section>
+    <!-- Contact Section with Send Message Button -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" id="emailInput" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="messageInput" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="button" id="sendMessageBtn" class="btn btn-neon">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+<!-- Modal for Message Sent -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">Message Sent</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Thank you! Your message has been sent successfully.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Join Our Community Form -->
-    <section class="join-community">
+    <section id="join-community" class="join-community">
         <h2>Join Our Community</h2>
         <p>Subscribe to Our Newsletter</p>
         <form>
@@ -142,9 +191,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        //Script Modal Subscribe
         document.getElementById("subscribeBtn").addEventListener("click", function () {
             var subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
             subscribeModal.show();
+        });
+        //Script Modal sendMessage
+        document.getElementById("sendMessageBtn").addEventListener("click", function () {
+            var messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
+            messageModal.show();
         });
     </script>
 

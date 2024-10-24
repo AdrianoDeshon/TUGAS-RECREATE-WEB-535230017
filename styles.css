@@ -1,8 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1b1b1b;
     color: #fff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+h1, h2, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.navbar a, .card-title, .join-community h2, .footer a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.section-intro p, .card-body p, .modal-body, .footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
 .navbar {
     background-color: #1a1a1a;
     border-bottom: 2px solid #39ff14;
@@ -12,16 +31,16 @@ body {
     font-weight: bold;
 }
 .navbar .btn-subscribe {
-    background-color: #39ff14; /* Warna biru cerah */
-    color: rgb(0, 0, 0) !important; /* Warna teks putih */
-    padding: 8px 16px; /* Ruang dalam tombol */
-    border-radius: 5px; /* Sudut agak membulat */
-    font-weight: bold; /* Teks tebal */
+    background-color: #39ff14; 
+    color: rgb(0, 0, 0) !important; 
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    font-weight: bold; 
 }
 
 .navbar .btn-subscribe:hover {
-    background-color: #37c456; /* Warna saat hover */
-    color: rgb(5, 2, 2) !important; /* Tetap putih */
+    background-color: #37c456; 
+    color: rgb(5, 2, 2) !important; 
 }
 .header {
     text-align: center;
@@ -125,4 +144,27 @@ body {
 
 .modal-body {
     color: #b3b3b3; 
+}
+
+.about-section, .contact-section {
+    padding: 50px;
+    background-color: #222;
+    text-align: center;
+}
+.about-section h2, .contact-section h2 {
+    color: #39ff14;
+}
+.about-section p, .contact-section p {
+    color: #b3b3b3;
+}
+
+.contact-section .btn-neon {
+    background-color: #39ff14;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.contact-section .btn-neon:hover {
+    background-color: #37c456;
 }
